@@ -1,7 +1,7 @@
 import React from 'react';
+import { RiftGate, RiftProvider } from 'rift-router';
 import { DocsContainer, MainContainer } from './styled';
 import { MainSidebar } from './MainSidebar';
-import { RiftGate, RiftProvider } from 'rift-router';
 import { routes } from '../router';
 import './main.css';
 

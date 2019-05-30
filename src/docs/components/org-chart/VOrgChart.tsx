@@ -42,7 +42,6 @@ const dataSource = {
 };
 
 const VOrgChartDoc = () => {
-
   const onReorderHierarchy = (data: any) => {
     console.log(data);
   };
@@ -56,9 +55,9 @@ const VOrgChartDoc = () => {
       dataSource={dataSource}
       onReorder={onReorderHierarchy}
       onClick={onClickCompany}
-      draggable={true}
+      draggable
     />
-  )
-}
+  );
+};
 
 export default VOrgChartDoc;

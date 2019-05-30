@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { CompanyName, SidebarContainer } from './styled';
-import { Collapse, Icon } from '@blueprintjs/core';
+import { Collapse } from '@blueprintjs/core';
 import { RiftLink } from 'rift-router';
+import { CompanyName, SidebarContainer } from './styled';
 
 export const MainSidebar = () => {
   const [state, setState] = useState({
@@ -19,18 +19,16 @@ export const MainSidebar = () => {
       </label>
       <div id="sidebarMenu">
         <ul className="sidebarMenuInner">
-            <li>
-                <RiftLink to="/">Home</RiftLink>
-            </li>
+          <li>
+            <RiftLink to="/">Home</RiftLink>
+          </li>
           <li>
             <a
-              onClick={() =>
-                setState({ ...state, ...{ table: !state['table'] } })
-              }
+              onClick={() => setState({ ...state, ...{ table: !state.table } })}
             >
               Table
             </a>
-            <Collapse isOpen={state['table']}>
+            <Collapse isOpen={state.table}>
               <ul className="sidebarMenuInner">
                 <li>
                   <RiftLink to="/table/ag-grid">Ag-Grid</RiftLink>
@@ -51,13 +49,11 @@ export const MainSidebar = () => {
           </li>
           <li>
             <a
-              onClick={() =>
-                setState({ ...state, ...{ forms: !state['forms'] } })
-              }
+              onClick={() => setState({ ...state, ...{ forms: !state.forms } })}
             >
               Forms
             </a>
-            <Collapse isOpen={state['forms']}>
+            <Collapse isOpen={state.forms}>
               <ul className="sidebarMenuInner">
                 <li>
                   <RiftLink to="/forms">Example</RiftLink>
@@ -70,9 +66,9 @@ export const MainSidebar = () => {
                     Select Unselect
                   </RiftLink>
                 </li>
-                  <li>
-                      <RiftLink to="/forms/dnd">Drag&Drop</RiftLink>
-                  </li>
+                <li>
+                  <RiftLink to="/forms/dnd">Drag&Drop</RiftLink>
+                </li>
               </ul>
             </Collapse>
           </li>
@@ -92,9 +88,7 @@ export const MainSidebar = () => {
             <RiftLink to="/hierarchy">Hierarchy</RiftLink>
           </li>
         </ul>
-        <CompanyName>
-          General Software Inc.
-        </CompanyName>
+        <CompanyName>General Software Inc.</CompanyName>
       </div>
     </SidebarContainer>
   );

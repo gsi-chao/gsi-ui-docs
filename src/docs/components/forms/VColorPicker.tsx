@@ -41,7 +41,7 @@ class VColorPickerDoc extends Component<any, IState> {
           Color={this.state.color}
           onChange={this.handleChangeColor}
           typePickerColor={this.state.typePickerColor}
-          position={'right'}
+          position="right"
           width={30}
           height={30}
           disable={this.state.disable}

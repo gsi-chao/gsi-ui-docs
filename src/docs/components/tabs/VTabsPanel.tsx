@@ -30,13 +30,13 @@ class VTabsPanelDoc extends Component {
         content: (
           <div style={{ padding: '5px' }}>
             <VTabsPanel
-              size={'small'}
-              backgroundColor={'white'}
-              padding={'10px 25px'}
+              size="small"
+              backgroundColor="white"
+              padding="10px 25px"
               tabList={tabList}
-              activeBorderColor={'red'}
-              active={'3'}
-              beforeChangeTabValidation={true}
+              activeBorderColor="red"
+              active="3"
+              beforeChangeTabValidation
               handleChange={this.handelChangeTab}
               tabsAlertProps={{
                 confirmButtonText: 'Confirm',
@@ -55,12 +55,12 @@ class VTabsPanelDoc extends Component {
     return (
       <div style={{ padding: '25px' }}>
         <VTabsPanel
-          backgroundColor={'antiquewhite'}
-          size={'small'}
-          padding={'10px 25px'}
+          backgroundColor="antiquewhite"
+          size="small"
+          padding="10px 25px"
           tabList={FirstTabList}
-          activeBorderColor={'red'}
-          active={'1'}
+          activeBorderColor="red"
+          active="1"
           handleChange={this.handelChangeTab}
         />
       </div>
