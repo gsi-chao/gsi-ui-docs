@@ -162,11 +162,11 @@ const getData = (size: number) => {
   for (let i = 0; i < size; i++) {
     data.push({
       name: `name_${i + 1}`,
-      workShift: `workShift_${i + 1}`,
+      workShift: `last name_${i + 1}`,
       company: `company_${i + 1}`,
-      supervisor: `supervisor_${i + 1}`,
+      supervisor: `${i + 1}`,
       phonebook: `phonebook_${i + 1}`,
-      terminal: `terminalt_${i + 1}`,
+      terminal: `address_${i + 1}`,
       ...datesData
     });
   }
@@ -181,14 +181,14 @@ const getDataTotal = (size: number) => {
   let labels: string[] = [
     'On',
     'Off',
-    'DAY',
-    'NGT',
-    'ANY',
-    'RES',
-    'VAC',
-    'TRD',
-    'NEW',
-    'TER'
+    'Food',
+    'Gasoline',
+    'wood',
+    'PC',
+    'TV',
+    'Count Phone',
+    'Printer',
+    'Human Resources'
   ];
 
   for (let i = 0; i < size; i++) {
@@ -241,7 +241,7 @@ const getState = () => {
       },
       {
         colId: 'workShift',
-        headerName: 'workShift',
+        headerName: 'last name',
         field: 'workShift',
         sortable: true,
         suppressMenu: true,
@@ -249,7 +249,7 @@ const getState = () => {
       },
       {
         colId: 'supervisor',
-        headerName: 'supervisor',
+        headerName: 'Age',
         field: 'supervisor',
         suppressMenu: true,
         pinned
@@ -263,7 +263,7 @@ const getState = () => {
       },
       {
         colId: 'terminal',
-        headerName: 'Terminal',
+        headerName: 'Address',
         field: 'terminal',
         suppressMenu: true,
         pinned
