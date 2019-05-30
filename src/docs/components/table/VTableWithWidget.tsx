@@ -1,6 +1,12 @@
 import React, { Component, ReactNode } from 'react';
 import { Button, Icon } from '@blueprintjs/core';
-import { CellSelectionType, InfoSelection, showToastNotification, VTable, IVWidgetTableProps } from 'gsi-vx-ui';
+import {
+  CellSelectionType,
+  InfoSelection,
+  IVWidgetTableProps,
+  showToastNotification,
+  VTable
+} from 'gsi-vx-ui';
 
 export const dropDown: IVWidgetTableProps = {
   column: 'dropdown',
@@ -97,13 +103,14 @@ export const customerwidget: IVWidgetTableProps = {
   widget: {
     type: 'CUSTOMERCOMPONENT',
     cusmtomerCell: {
-      renderCustomer: (value: string, infoSelection?:InfoSelection): ReactNode => {
-
-
+      renderCustomer: (
+        value: string,
+        infoSelection?: InfoSelection
+      ): ReactNode => {
         return (
           <div style={{ textAlign: 'center' }}>
-            <Icon icon={'phone'} iconSize={15}
-                  intent={'success'}/> {value} adjgndkgfjnkdgndksjgnfksdjgnfksdjngfksjdngfkjsdngfksjd
+            <Icon icon={'phone'} iconSize={15} intent={'success'} /> {value}{' '}
+            adjgndkgfjnkdgndksjgnfksdjgnfksdjngfksjdngfkjsdngfksjd
           </div>
         );
       },
@@ -122,7 +129,7 @@ export const customerwidget: IVWidgetTableProps = {
 export const renderCustomer = (value: string): ReactNode => {
   return (
     <div>
-      <Icon icon={'phone'} iconSize={15} intent={'success'}/> {value}
+      <Icon icon={'phone'} iconSize={15} intent={'success'} /> {value}
     </div>
   );
 };
@@ -134,8 +141,7 @@ export const widgetsCell: IVWidgetTableProps[] = [
   customerwidget
 ];
 
-interface IProps {
-}
+interface IProps {}
 
 interface IState {
   changeColor: boolean;
@@ -172,7 +178,6 @@ class VTableWithWidgetDoc extends Component<IProps, IState> {
         'customer',
         'color',
         'sinEditar'
-
       ],
       clearSelection: undefined,
       typeSelection: 'CELL',
@@ -198,46 +203,48 @@ class VTableWithWidgetDoc extends Component<IProps, IState> {
     }
 
     if (infoSelection && infoSelection!.columnName === 'customer') {
-      return (<div style={{width:'auto'}}>
-        <ul>
-          <li>Dias de vacaiones {value}eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee </li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-
-        </ul>
-
-      </div>);
+      return (
+        <div style={{ width: 'auto' }}>
+          <ul>
+            <li>
+              Dias de vacaiones {value}eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee{' '}
+            </li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+          </ul>
+        </div>
+      );
     }
 
     if (infoSelection && infoSelection!.columnName === 'fecha') {
-      return (<div>
-        <ul>
-          <li>Dias de vacaiones {value} </li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-          <li>Dias de vacaiones {value}</li>
-        </ul>
-
-      </div>);
+      return (
+        <div>
+          <ul>
+            <li>Dias de vacaiones {value} </li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+            <li>Dias de vacaiones {value}</li>
+          </ul>
+        </div>
+      );
     }
 
     return undefined;
-
   };
 
   render() {
@@ -326,7 +333,6 @@ class VTableWithWidgetDoc extends Component<IProps, IState> {
                 }
               ]
             }}
-
             data={this.state.data}
             textAlignColumn={[
               {
@@ -387,14 +393,14 @@ class VTableWithWidgetDoc extends Component<IProps, IState> {
           />
         </div>
 
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
         <button onClick={this.handleChangeColor}>cambiar color</button>
         <button onClick={this.changeColumn}>cambiar columnas</button>
@@ -406,7 +412,7 @@ class VTableWithWidgetDoc extends Component<IProps, IState> {
         >
           cambiar datos
         </button>
-        <br/>
+        <br />
         <span> tipo de seleccion </span>
         <select onChange={this.handleChangeType}>
           <option value={'CELL'}>CELL</option>
@@ -430,15 +436,19 @@ class VTableWithWidgetDoc extends Component<IProps, IState> {
           {' '}
           habilitar seleccion
         </button>
-        <br/>
-        <br/>
-        <VTable columns={['name', 'customer', 'other']} data={[{
-          name: 'name',
-          customer: 'customer',
-          other: 'other'
-        }]}
-                tooltips={this.renderTooltip}
-                positionTooltips={'left'}
+        <br />
+        <br />
+        <VTable
+          columns={['name', 'customer', 'other']}
+          data={[
+            {
+              name: 'name',
+              customer: 'customer',
+              other: 'other'
+            }
+          ]}
+          tooltips={this.renderTooltip}
+          positionTooltips={'left'}
         />
       </React.Fragment>
     );

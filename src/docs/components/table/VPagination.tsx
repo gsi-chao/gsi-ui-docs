@@ -252,8 +252,8 @@ class VPaginationDoc extends Component<any, ISate> {
           pageNeighbours={1}
           onPageChanged={this.onPageChanged}
           currentPage={this.state.currentPage}
-          labels={{pages:"paginas"}}
-          customerStyle={{borderRadius:'0px'}}
+          labels={{ pages: 'paginas' }}
+          customerStyle={{ borderRadius: '0px' }}
         />
 
         <p>Customer</p>
@@ -275,7 +275,7 @@ class VPaginationDoc extends Component<any, ISate> {
             iconColor: 'white',
             pageHoverColor: 'black',
             pageHoverBackgroundColor: '#1985A1',
-            borderRadius:'0px'
+            borderRadius: '0px'
           }}
         />
       </React.Fragment>

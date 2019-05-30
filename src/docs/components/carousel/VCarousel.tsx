@@ -1,6 +1,5 @@
 import React from 'react';
-import { VCarousel, VInputField, VSelectField, VOrgChart, VTextAreaField } from 'gsi-vx-ui';
-
+import { VCarousel, VInputField, VTextAreaField } from 'gsi-vx-ui';
 
 const elementsCarousel: any = [
   <VInputField
@@ -10,10 +9,10 @@ const elementsCarousel: any = [
       labelOrientation: 'end',
       inputOrientation: 'center'
     }}
-    value={''}
+    value=""
     id="username"
-    label={'Username'}
-    inline={true}
+    label="Username"
+    inline
   />,
   <VTextAreaField
     fill
@@ -26,7 +25,7 @@ const elementsCarousel: any = [
     id="description"
     label="Description"
     inline
-    value={''}
+    value=""
   />,
   <VTextAreaField
     fill
@@ -39,20 +38,19 @@ const elementsCarousel: any = [
     id="description"
     label="Description"
     inline
-    value={''}
+    value=""
   />
 ];
 
 const VCarouselDoc = () => {
-
   return (
     <VCarousel
-      height={'200px'}
-      width={'500px'}
+      height="200px"
+      width="500px"
       elements={elementsCarousel}
-      buttonsJustify={'flex-end'}
+      buttonsJustify="flex-end"
     />
-  )
-}
+  );
+};
 
-export default VCarouselDoc
+export default VCarouselDoc;

@@ -10,7 +10,6 @@ export const MainHeader = () => {
         <div className="spinner horizontal" />
         <div className="spinner diagonal part-2" />
       </label>
-
     </React.Fragment>
   );
 };

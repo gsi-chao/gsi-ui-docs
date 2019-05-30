@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { Button } from '@blueprintjs/core';
 import styled from 'styled-components';
-import { VSpinner, VCardPanel, IToastNotificationProps, showToastNotification } from 'gsi-vx-ui';
+import {
+  IToastNotificationProps,
+  showToastNotification,
+  VCardPanel,
+  VSpinner
+} from 'gsi-vx-ui';
 
 export const RowButtons = styled.div`
   display: flex;
@@ -10,11 +15,12 @@ export const RowButtons = styled.div`
 class VNotificationToastDocs extends Component {
   buttonsHeaderRow = () => (
     <RowButtons>
-      <VSpinner color={'#fff'} size={20} />
-      <Button minimal icon={'plus'} text={'New'} />
-      <Button minimal icon={'edit'} text={'Edit'} />
+      <VSpinner color="#fff" size={20} />
+      <Button minimal icon="plus" text="New" />
+      <Button minimal icon="edit" text="Edit" />
     </RowButtons>
   );
+
   render() {
     const propsList: IToastNotificationProps[] = [
       {
@@ -48,8 +54,8 @@ class VNotificationToastDocs extends Component {
             console just before this one banish and has a duration of
             <em>5 s (5000 ms)</em> form more documentation:{' '}
             <a
-              href={'https://blueprintjs.com/docs/#core/components/toast'}
-              target={'_blank'}
+              href="https://blueprintjs.com/docs/#core/components/toast"
+              target="_blank"
             >
               the documentation
             </a>
@@ -69,7 +75,7 @@ class VNotificationToastDocs extends Component {
     return (
       <div style={{ padding: '25px' }}>
         <VCardPanel
-          headerText={'Testing Custom Header Panel'}
+          headerText="Testing Custom Header Panel"
           headerCustomComponent={this.buttonsHeaderRow()}
         />
         {propsList.map((props, index) => {

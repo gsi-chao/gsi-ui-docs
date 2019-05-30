@@ -1,6 +1,6 @@
 import React from 'react';
-import { VTable, ISortResult, showToastNotification } from 'gsi-vx-ui';
-import VTableWithWidgetDoc from "./VTableWithWidget";
+import { ISortResult, showToastNotification, VTable } from 'gsi-vx-ui';
+import VTableWithWidgetDoc from './VTableWithWidget';
 
 const data = [
   {
@@ -40,7 +40,7 @@ const nameValidation = (value: string) => {
   return value.length > 5;
 };
 
-const VBlueprintDoc= () => {
+const VBlueprintDoc = () => {
   const onSave = (data: any) => {
     console.log(data);
   };
@@ -65,9 +65,9 @@ const VBlueprintDoc= () => {
           'age4',
           'age5'
         ]}
-        cellSelectionType={'ENTIRE_ROW'}
+        cellSelectionType="ENTIRE_ROW"
         columns_name={{ name: 'mi nombre' }}
-        reordering={true}
+        reordering
         sortable={{ onSort, columns: ['name'] }}
         contextual={{
           columnsContextual: [
@@ -108,9 +108,9 @@ const VBlueprintDoc= () => {
           }
         }}
         data={data}
-        enableColumnResizing={true}
-        enableRowHeader={true}
-        enableRowResizing={true}
+        enableColumnResizing
+        enableRowHeader
+        enableRowResizing
         columnWidths={[200, 200, 250, 250, 250]}
         numFrozenRows={2}
         numFrozenColumns={1}
@@ -126,7 +126,6 @@ const VBlueprintDoc= () => {
         }}
       />
       <VTableWithWidgetDoc />
-
     </div>
   );
 };

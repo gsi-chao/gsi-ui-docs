@@ -12,6 +12,7 @@ class VLoadProgressDoc extends Component<{}, IState> {
       open: false
     };
   }
+
   render() {
     return (
       <React.Fragment>
@@ -19,12 +20,13 @@ class VLoadProgressDoc extends Component<{}, IState> {
         <VLoadProgressTask
           onClose={() => this.setState({ open: false })}
           isOpen={this.state.open}
-          title={'Import Account'}
+          title="Import Account"
           icon="import"
         />
       </React.Fragment>
     );
   }
+
   openProgress = (event: any) => {
     this.setState({ open: true });
     setTimeout(() => {

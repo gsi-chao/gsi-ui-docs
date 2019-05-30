@@ -77,11 +77,12 @@ class VDragAndDropDoc extends Component<{}, {}> {
       open: false
     };
   }
+
   render() {
     return (
       <DragAndDropList
         list={list}
-        containerOrientation={'horizontal'}
+        containerOrientation="horizontal"
         onDragAndDrop={output => console.log(output)}
       />
     );

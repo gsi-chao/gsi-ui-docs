@@ -1,7 +1,6 @@
 import React from 'react';
 import { IItemsList, SelectUnselectItems } from 'gsi-vx-ui';
 
-
 const itemsUnassigned: IItemsList[] = [
   { active: false, text: 'Item1', value: 'item1' },
   { active: false, text: 'Item2', value: 'item2' },
@@ -16,17 +15,16 @@ const itemsAssigned: IItemsList[] = [
 ];
 
 export const VSelectUnselectItemsDemo = () => {
-
   const handleSave = (element: any) => {
     console.log(element);
   };
   return (
     <SelectUnselectItems
-      listsHeights={'142px'}
+      listsHeights="142px"
       handleCancel={() => console.log('cancelled')}
       handleSave={handleSave}
       itemsUnassigned={itemsUnassigned}
       itemsAssigned={itemsAssigned}
     />
-  )
-}
+  );
+};

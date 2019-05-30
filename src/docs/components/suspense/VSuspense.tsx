@@ -12,6 +12,7 @@ class VSuspenseDoc extends Component<{}, {}> {
   constructor(props: any) {
     super(props);
   }
+
   render() {
     return (
       <div style={{ width: 600 }}>
