@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/gsi-ui-docs/static/css/main.8af7972f.chunk.css",
+    "main.js": "/gsi-ui-docs/static/js/main.c19b3d19.chunk.js",
+    "main.js.map": "/gsi-ui-docs/static/js/main.c19b3d19.chunk.js.map",
+    "runtime~main.js": "/gsi-ui-docs/static/js/runtime~main.6c30b8f6.js",
+    "runtime~main.js.map": "/gsi-ui-docs/static/js/runtime~main.6c30b8f6.js.map",
+    "static/css/2.43a615cf.chunk.css": "/gsi-ui-docs/static/css/2.43a615cf.chunk.css",
+    "static/js/2.b8476ab1.chunk.js": "/gsi-ui-docs/static/js/2.b8476ab1.chunk.js",
+    "static/js/2.b8476ab1.chunk.js.map": "/gsi-ui-docs/static/js/2.b8476ab1.chunk.js.map",
+    "index.html": "/gsi-ui-docs/index.html",
+    "precache-manifest.926f757847a9936938da487121a7b043.js": "/gsi-ui-docs/precache-manifest.926f757847a9936938da487121a7b043.js",
+    "service-worker.js": "/gsi-ui-docs/service-worker.js",
+    "static/css/2.43a615cf.chunk.css.map": "/gsi-ui-docs/static/css/2.43a615cf.chunk.css.map",
+    "static/css/main.8af7972f.chunk.css.map": "/gsi-ui-docs/static/css/main.8af7972f.chunk.css.map",
+    "static/media/font-awesome.min.css": "/gsi-ui-docs/static/media/fontawesome-webfont.fee66e71.woff"
+  }
+}
