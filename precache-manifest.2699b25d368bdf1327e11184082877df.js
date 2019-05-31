@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "648aac864e04cf975041d58843da1600",
+    "revision": "04c60f292070b610ad4890bef3fca741",
     "url": "/gsi-ui-docs/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gsi-ui-docs/static/css/2.43a615cf.chunk.css"
   },
   {
-    "revision": "232993de145309e9e1f4",
+    "revision": "0e729b4d54e1b710ccc2",
     "url": "/gsi-ui-docs/static/css/main.8af7972f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gsi-ui-docs/static/js/2.b8476ab1.chunk.js"
   },
   {
-    "revision": "232993de145309e9e1f4",
-    "url": "/gsi-ui-docs/static/js/main.c19b3d19.chunk.js"
+    "revision": "0e729b4d54e1b710ccc2",
+    "url": "/gsi-ui-docs/static/js/main.612c0b88.chunk.js"
   },
   {
     "revision": "a3151925ba165ba563be",
