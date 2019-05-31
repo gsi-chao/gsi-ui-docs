@@ -799,11 +799,11 @@ const VAgGridDoc = () => {
   };
 
   const onBtScrolling = () => {
-    apiGrid && apiGrid!.ensureColumnVisible('05-06-2019/date');
-    apiGrid && apiGrid!.ensureColumnVisible('31-05-2019/date');
+    apiGrid && apiGrid!.ensureColumnVisible('30-07-2019/date');
+    apiGrid && apiGrid!.ensureColumnVisible('14-06-2019/date');
 
-    apiGridTotal && apiGridTotal!.ensureColumnVisible('05-06-2019/date');
-    apiGridTotal && apiGridTotal!.ensureColumnVisible('31-05-2019/date');
+    apiGridTotal && apiGridTotal!.ensureColumnVisible('30-07-2019/date');
+    apiGridTotal && apiGridTotal!.ensureColumnVisible('14-06-2019/date');
 
     apiGrid && apiGrid!.ensureIndexVisible(100);
     apiGrid && apiGrid!.ensureNodeVisible(200);
@@ -946,21 +946,21 @@ const VAgGridDoc = () => {
 
       <button onClick={toggleContextualMenu}>
         {' '}
-        {enableContextualMenu ? 'deshabilitar ' : 'hablilitar '} Menu contextual
+        {enableContextualMenu ? 'disable ' : 'enable '} Menu contextual
       </button>
       <button onClick={toggleVisibleColumns}>
         {' '}
         {hideColumns
-          ? 'Ocultar columns, company y workShift  '
-          : 'Mostrar columnas, company y workShift '}
+          ? 'hide columns, company y last name  '
+          : 'show columns, company y last name '}
       </button>
       <button onClick={clearTable}>
-        {clearData ? 'Poblar tabla  ' : 'Borrar tabla'}
+        {clearData ? 'Populate tabla  ' : 'Clear table'}
       </button>
       <button onClick={onBtShowLoading}>
-        {showLoading ? 'Ocultar cargando ' : 'Mostrar cargando'}
+        {showLoading ? 'Hide loading ' : 'Show loading'}
       </button>
-      <button onClick={onBtScrolling}>scroll to 31-05-2019</button>
+      <button onClick={onBtScrolling}>scroll to 14-06-2019</button>
 
       <VAgGrid
         onGridReady={onGridReady}
