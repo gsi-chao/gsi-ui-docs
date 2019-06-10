@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DragAndDropList, IDNDList } from 'gsi-vx-ui';
+import { DragAndDropList, IDNDList } from 'gsi-ui';
 
 const list: IDNDList[] = [
   {

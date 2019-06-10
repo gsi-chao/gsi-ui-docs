@@ -5,7 +5,7 @@ import {
   VColorResult,
   VHSLColor,
   VRGBColor
-} from 'gsi-vx-ui';
+} from 'gsi-ui';
 
 interface IState {
   typePickerColor: TypePickerColor;
