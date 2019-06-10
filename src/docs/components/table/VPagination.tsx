@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { IInfoPage, VPagination } from 'gsi-vx-ui';
+import { IInfoPage, VPagination } from 'gsi-ui';
 
 interface ISate {
   allCountries: any[];

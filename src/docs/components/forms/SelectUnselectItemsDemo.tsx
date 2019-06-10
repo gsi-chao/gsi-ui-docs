@@ -1,5 +1,5 @@
 import React from 'react';
-import { IItemsList, SelectUnselectItems } from 'gsi-vx-ui';
+import { IItemsList, SelectUnselectItems } from 'gsi-ui';
 
 const itemsUnassigned: IItemsList[] = [
   { active: false, text: 'Item1', value: 'item1' },

@@ -6,7 +6,7 @@ import {
   IVWidgetTableProps,
   showToastNotification,
   VTable
-} from 'gsi-vx-ui';
+} from 'gsi-ui';
 
 export const dropDown: IVWidgetTableProps = {
   column: 'dropdown',

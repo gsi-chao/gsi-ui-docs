@@ -18,7 +18,7 @@ import {
   VSelectMultiple,
   VTagInputField,
   VTextAreaField
-} from 'gsi-vx-ui';
+} from 'gsi-ui';
 
 const store = [
   {

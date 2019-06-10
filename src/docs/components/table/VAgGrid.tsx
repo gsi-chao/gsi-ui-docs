@@ -9,7 +9,7 @@ import {
   VInputField,
   VSelectField,
   VSpinner
-} from 'gsi-vx-ui';
+} from 'gsi-ui';
 import {
   CellValueChangedEvent,
   ColDef,

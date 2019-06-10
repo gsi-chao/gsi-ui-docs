@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { VLoadProgressTask } from 'gsi-vx-ui';
+import { VLoadProgressTask } from 'gsi-ui';
 import { Button } from '@blueprintjs/core';
 
 interface IState {

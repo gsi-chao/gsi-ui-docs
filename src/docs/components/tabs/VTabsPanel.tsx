@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ITabsPanelTypes, VTabsPanel } from 'gsi-vx-ui';
+import { ITabsPanelTypes, VTabsPanel } from 'gsi-ui';
 
 class VTabsPanelDoc extends Component {
   render() {
