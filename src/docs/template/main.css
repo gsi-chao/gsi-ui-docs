@@ -10,6 +10,10 @@
   overflow: hidden;
   z-index: 10;
 }
+#center{
+  background-color: whitesmoke;
+  height: 100vh;
+}
 .main {
   margin: 0 auto;
   display: block;

@@ -11,7 +11,7 @@ export const Main = () => {
       <RiftProvider routes={routes}>
         <MainSidebar />
         <MainContainer>
-          <div id="center" className="main center">
+          <div  id="center" className="main center">
             <RiftGate />
           </div>
         </MainContainer>
