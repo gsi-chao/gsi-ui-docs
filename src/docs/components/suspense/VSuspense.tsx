@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { VSuspenseLoading } from 'gsi-vx-ui';
+import { VSuspenseLoading } from 'gsi-ui';
 
 const Table = React.lazy(() => {
   return Promise.all([

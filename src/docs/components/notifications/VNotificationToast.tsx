@@ -6,7 +6,7 @@ import {
   showToastNotification,
   VCardPanel,
   VSpinner
-} from 'gsi-vx-ui';
+} from 'gsi-ui';
 
 export const RowButtons = styled.div`
   display: flex;

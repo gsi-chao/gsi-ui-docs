@@ -631,7 +631,7 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-jsx" "^7.2.0"
 
-"@babel/plugin-transform-react-jsx@^7.0.0", "@babel/plugin-transform-react-jsx@^7.3.0":
+"@babel/plugin-transform-react-jsx@^7.0.0":
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.3.0.tgz#f2cab99026631c767e2745a5368b331cfe8f5290"
   integrity sha512-a/+aRb7R06WcKvQLOu4/TpjKOdvVEKRLWFpKcNuHhiREPgGRB4TQJxq07+EZLS8LFVYpfq1a5lDUnuMdcCpBKg==
@@ -4897,6 +4897,7 @@ gsi-ui@^0.1.2-beta4:
   version "0.1.2-beta4"
   resolved "https://registry.yarnpkg.com/gsi-ui/-/gsi-ui-0.1.2-beta4.tgz#f8f943a6804a525050da1766f7825c6638437746"
   integrity sha512-723pAn3frO6WKhkfTIk+fn5t84vaOHYpBb95oV+UdgBvPWJEHTo5/pOvwW3oCvHRW18IQJVFSWzvWYc6imnnDQ==
+
   dependencies:
     "@blueprintjs/core" "^3.15.1"
     "@blueprintjs/datetime" "^3.9.0"
@@ -4928,8 +4929,8 @@ gsi-vx-ui@^0.3.7-beta12:
   version "0.3.7-beta12"
   resolved "https://registry.yarnpkg.com/gsi-vx-ui/-/gsi-vx-ui-0.3.7-beta12.tgz#865bfba857c28c2cc8d4036b05df6aef15e3b513"
   integrity sha512-IF6S7q60ULwa4hqiN3Qr7HuuKcNkgSyiRN/upMR11tTaoBfH1ULiKpPi6fEhmJBomOgGzPg0LwdYG3TjqloD8Q==
+
   dependencies:
-    "@babel/plugin-transform-react-jsx" "^7.3.0"
     "@blueprintjs/core" "^3.15.1"
     "@blueprintjs/datetime" "^3.9.0"
     "@blueprintjs/select" "^3.8.0"
@@ -4939,6 +4940,7 @@ gsi-vx-ui@^0.3.7-beta12:
     ag-grid-enterprise "^20.2.0"
     ag-grid-react "^20.2.0"
     formstate "^1.3.0"
+    jest-watch-typeahead "^0.3.1"
     jquery "^3.4.1"
     lodash "^4.17.11"
     mobx "^5.9.4"
@@ -4951,6 +4953,7 @@ gsi-vx-ui@^0.3.7-beta12:
     react-dom "^16.8.6"
     react-pose "^4.0.8"
     react-resize-detector "^4.1.3"
+    rxjs "^6.5.2"
     styled-components "^4.2.0"
     validator "^10.11.0"
 

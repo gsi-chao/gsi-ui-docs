@@ -1,5 +1,5 @@
 import React from 'react';
-import { VCarousel, VInputField, VTextAreaField } from 'gsi-vx-ui';
+import { VCarousel, VInputField, VTextAreaField } from 'gsi-ui';
 
 const elementsCarousel: any = [
   <VInputField

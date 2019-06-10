@@ -1,5 +1,5 @@
 import React from 'react';
-import { VOrgChart } from 'gsi-vx-ui';
+import { VOrgChart } from 'gsi-ui';
 
 const dataSource = {
   name: 'Hierarchy',

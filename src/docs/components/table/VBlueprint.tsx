@@ -1,5 +1,5 @@
 import React from 'react';
-import { ISortResult, showToastNotification, VTable } from 'gsi-vx-ui';
+import { ISortResult, showToastNotification, VTable } from 'gsi-ui';
 import VTableWithWidgetDoc from './VTableWithWidget';
 
 const data = [
