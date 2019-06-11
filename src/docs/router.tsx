@@ -1,6 +1,5 @@
 import React from 'react';
 import { IRiftRoute } from 'rift-router';
-import VBlueprintDoc from '../docs/components/table/VBlueprint';
 import { VSelectUnselectItemsDemo } from './components/forms/SelectUnselectItemsDemo';
 import VAgGridDoc from './components/table/VAgGrid';
 import VPaginationDocs from './components/table/VPagination';
@@ -14,6 +13,7 @@ import VSuspenseDoc from './components/suspense/VSuspense';
 import VTabsPanelDoc from './components/tabs/VTabsPanel';
 import VOrgChartDoc from './components/org-chart/VOrgChart';
 import Home from './template/Home';
+import VTableDocs from "./components/table/VTableDocs";
 
 export const routes: IRiftRoute[] = [
   {
@@ -23,7 +23,7 @@ export const routes: IRiftRoute[] = [
   },
   { path: '/', component: <Home /> },
   { path: '/table/ag-grid', component: <VAgGridDoc /> },
-  { path: '/table/blueprint', component: <VBlueprintDoc /> },
+  { path: '/table/blueprint', component: <VTableDocs /> },
   { path: '/table/blueprint/suspense', component: <VSuspenseDoc /> },
   { path: '/table/pagination', component: <VPaginationDocs /> },
   { path: '/forms', component: () => <VInputsDoc /> },
