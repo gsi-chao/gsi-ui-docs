@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { DragAndDropList, IDNDList } from 'gsi-ui';
+import { DnDList, DragAndDropList, IDNDList } from 'gsi-ui';
+import { H1 } from '@blueprintjs/core';
 
 const list: IDNDList[] = [
   {
@@ -69,6 +70,54 @@ const list: IDNDList[] = [
     ]
   }
 ];
+const style = {
+  height: '100px',
+  backgroundColor: '#90beee',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'start'
+};
+
+const items = [
+  {
+    id: '1',
+    content: (
+      <div style={style}>
+        <img height={'100px'} src={'https://picsum.photos/100'} />
+        <span style={{ marginLeft: 5 }}>Item1</span>
+      </div>
+    )
+  },
+  {
+    id: '2',
+    content: (
+      <div style={style}>
+        <img height={'100px'} src={'https://picsum.photos/100'} />
+        <span style={{ marginLeft: 5 }}>Item2</span>
+      </div>
+    )
+  },
+  {
+    id: '3',
+    content: (
+      <div style={style}>
+        <img height={'100px'} src={'https://picsum.photos/100'} />
+        <span style={{ marginLeft: 5 }}>Item3</span>
+      </div>
+    )
+  }
+];
+
+const NewDndList = () => {
+  return (
+    <DnDList
+      list={items}
+      direction={'vertical'}
+      paddingList={'2px'}
+      width={'50px'}
+    />
+  );
+};
 
 class VDragAndDropDoc extends Component<{}, {}> {
   constructor(props: any) {
@@ -80,11 +129,15 @@ class VDragAndDropDoc extends Component<{}, {}> {
 
   render() {
     return (
-      <DragAndDropList
-        list={list}
-        containerOrientation="horizontal"
-        onDragAndDrop={output => console.log(output)}
-      />
+      <>
+        <DragAndDropList
+          list={list}
+          containerOrientation="horizontal"
+          onDragAndDrop={output => console.log(output)}
+        />
+        <H1>New Drag & Drop Component.</H1>
+        <NewDndList />
+      </>
     );
   }
 }
