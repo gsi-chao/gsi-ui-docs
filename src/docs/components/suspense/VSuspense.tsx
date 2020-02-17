@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { VSuspenseLoading } from 'gsi-ui';
 
-const Table = React.lazy(() => {
+const Table = React.lazy(():any => {
   return Promise.all([
     import('../table/VTableWithWidget'),
     new Promise(resolve => setTimeout(resolve, 3000))

@@ -3,7 +3,6 @@ import {
   EmptyData,
   getProperLetterColor,
   showToastNotification,
-  VAgGrid,
   VColorPicker,
   VColorResult,
   VInputField,
@@ -25,6 +24,7 @@ import {
   RangeSelection,
   RowValueChangedEvent
 } from 'ag-grid-community';
+import {AgGridReact as VAgGrid} from 'ag-grid-react'
 
 import moment, { Moment } from 'moment';
 import './vgrid.css';
