@@ -52,10 +52,10 @@ const VOrgChartDoc = () => {
 
   return (
     <VOrgChart
-      dataSource={dataSource}
-      onReorder={onReorderHierarchy}
-      onClick={onClickCompany}
-      draggable
+        data={dataSource}
+      // onReorder={onReorderHierarchy}
+      // onClick={onClickCompany}
+      // draggable
     />
   );
 };
