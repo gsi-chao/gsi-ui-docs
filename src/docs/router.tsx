@@ -14,6 +14,8 @@ import VTabsPanelDoc from './components/tabs/VTabsPanel';
 import VOrgChartDoc from './components/org-chart/VOrgChart';
 import Home from './template/Home';
 import VTableDocs from "./components/table/VTableDocs";
+import {FormFieldContainer} from "gsi-ui/lib/types/Form/Inputs/FormFieldContainer";
+import FormLayout from "./components/forms/FormLayout";
 
 export const routes: IRiftRoute[] = [
   {
@@ -26,7 +28,9 @@ export const routes: IRiftRoute[] = [
   { path: '/table/blueprint', component: <VTableDocs /> },
   { path: '/table/blueprint/suspense', component: <VSuspenseDoc /> },
   { path: '/table/pagination', component: <VPaginationDocs /> },
-  { path: '/forms', component: () => <VInputsDoc /> },
+  { path: '/example', component: () => <VInputsDoc /> },
+  { path: '/forms', component: () => <FormLayout /> },
+  { path: '/forms/select', component: () => <>{'Select'}</>},
   { path: '/forms/color-picker', component: () => <VColorPickerDoc /> },
   {
     path: '/forms/select-unselect',
