@@ -83,6 +83,9 @@ export const MainSidebar = () => {
           <li>
             <RiftLink to="/hierarchy">Hierarchy</RiftLink>
           </li>
+          <li>
+            <RiftLink to="/steps">Steps</RiftLink>
+          </li>
         </ul>
         <CompanyName>General Software Inc.</CompanyName>
       </div>

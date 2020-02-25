@@ -16,6 +16,7 @@ import Home from './template/Home';
 import VTableDocs from "./components/table/VTableDocs";
 import {FormFieldContainer} from "gsi-ui/lib/types/Form/Inputs/FormFieldContainer";
 import FormLayout from "./components/forms/FormLayout";
+import { VStepsDoc } from './components/steps/VSteps';
 
 export const routes: IRiftRoute[] = [
   {
@@ -41,5 +42,6 @@ export const routes: IRiftRoute[] = [
   { path: '/toast', component: () => <VNotificationToastDocs /> },
   { path: '/load-progress', component: () => <VLoadProgressDoc /> },
   { path: '/hierarchy', component: () => <VOrgChartDoc /> },
-  { path: '/carousel', component: () => <VCarouselDoc /> }
+  { path: '/carousel', component: () => <VCarouselDoc /> },
+  { path: '/steps', component: () => <VStepsDoc /> }
 ];
