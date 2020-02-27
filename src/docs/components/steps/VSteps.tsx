@@ -11,8 +11,8 @@ export const VStepsDoc = () => {
     <>
       <ReactMarkdown>
         {`
-# Steps
-**Steps** is a navigation bar that guides users through the steps of a task.
+# VSteps
+**VSteps** is a navigation bar that guides users through the steps of a task.
 ### When to use
 Users want to accomplish a goal that has many steps or must complete steps in a specific sequence.
 
@@ -34,17 +34,17 @@ Users want to accomplish a goal that has many steps or must complete steps in a 
           </VSteps>
         }
         componentString={`
-      <VSteps>
-        <VStep stepKey={1} title={'first'}>
-          <p>{'First step'}</p>
-        </VStep>
-        <VStep stepKey={2} description={'second description'}>
-          <p>{'Second step'}</p>
-        </VStep>
-        <VStep stepKey={3}>
-          <p>{'Third step'}</p>
-        </VStep>
-      </VSteps>
+          <VSteps>
+            <VStep stepKey={1} title={'first'}>
+              <p>{'First step'}</p>
+            </VStep>
+            <VStep stepKey={2} description={'second description'}>
+              <p>{'Second step'}</p>
+            </VStep>
+            <VStep stepKey={3}>
+              <p>{'Third step'}</p>
+            </VStep>
+          </VSteps>
       `}
       />
 
@@ -97,13 +97,14 @@ Users want to accomplish a goal that has many steps or must complete steps in a 
       `}
       />
 
+      <ReactMarkdown>{`# VSteps`}</ReactMarkdown>
       <ComponentApi
         params={[
           {
             property: 'mainColor',
             type: 'string',
             description: 'Steps main color',
-            default: "#137cbd"
+            default: '#137cbd'
           },
           {
             property: 'secondaryColor',
@@ -124,7 +125,39 @@ Users want to accomplish a goal that has many steps or must complete steps in a 
           {
             property: 'onChange',
             type: `(currentStep?: string | number | undefined, buttonClick?: 'next' | 'previous') => void`,
-            description: 'Trigger when Step is changed, it returns the currentStep key and the button who triggered the action'
+            description:
+              'Trigger when Step is changed, it returns the currentStep key and the button who triggered the action'
+          }
+        ]}
+      />
+
+      <ReactMarkdown>{`# VStep`}</ReactMarkdown>
+      <ComponentApi
+        params={[
+          {
+            property: 'stepKey',
+            type: `string | number`,
+            description: 'Unique key for the step'
+          },
+          {
+            property: 'title',
+            type: 'string',
+            description: 'Title shown on progress bar'
+          },
+          {
+            property: 'description',
+            type: 'string',
+            description: 'Description shown with the title  of step'
+          },
+          {
+            property: 'icon',
+            type: 'JSX.Element',
+            description: 'Icon to be shown on step progress bar'
+          },
+          {
+            property: 'component',
+            type: `FunctionComponent<{}>;`,
+            description: 'The component of the step, it can be passed has a child too'
           }
         ]}
       />

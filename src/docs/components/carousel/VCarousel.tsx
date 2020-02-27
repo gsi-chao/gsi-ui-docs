@@ -3,6 +3,7 @@ import { VCarousel, VInputField, VTextAreaField } from 'gsi-ui';
 import ReactMarkdown from 'react-markdown';
 import { ComponentDocCard } from '../commons/doc_components/ComponentDocCard';
 import { Row } from '../commons/doc_components/Row';
+import { ComponentApi } from '../commons/doc_components/ComponentApi';
 
 const elements = [
   <div>
@@ -136,6 +137,33 @@ const VCarouselDoc = () => {
           />
         </div>
       </Row>
+
+      <ReactMarkdown>{`# Carousel`}</ReactMarkdown>
+      <ComponentApi
+        params={[
+          {
+            property: 'height',
+            type: 'string',
+            description: 'Component height'
+          },
+          {
+            property: 'width',
+            type: 'string',
+            description: 'Component width'
+          },
+          {
+            property: 'elements',
+            type: 'any',
+            description: 'Array of elements'
+          },
+          {
+            property: 'buttonsJustify',
+            type: `'center' | 'flex-end' | 'flex-start'`,
+            description: 'Buttons alignment',
+            default: `flex-end`
+          }
+        ]}
+      />
     </div>
   );
 };

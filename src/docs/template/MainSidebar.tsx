@@ -47,7 +47,7 @@ export const MainSidebar = () => {
               </ul>
             </Collapse>
           </li>
-          <li>
+          <li onClick={() => setState({ ...state, ...{ forms: !state.forms } })}>
             <RiftLink to="/forms">Form</RiftLink>
             <Collapse isOpen={state.forms}>
               <ul className="sidebarMenuInner">
