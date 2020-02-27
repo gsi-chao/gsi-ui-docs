@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 
 import { ComponentDocCard } from '../commons/doc_components/ComponentDocCard';
 import { Icon } from '@blueprintjs/core';
+import { ComponentApi } from '../commons/doc_components/ComponentApi';
 
 export const VStepsDoc = () => {
   return (
@@ -94,6 +95,38 @@ Users want to accomplish a goal that has many steps or must complete steps in a 
           </VStep>
         </VSteps>
       `}
+      />
+
+      <ComponentApi
+        params={[
+          {
+            property: 'mainColor',
+            type: 'string',
+            description: 'Steps main color',
+            default: "#137cbd"
+          },
+          {
+            property: 'secondaryColor',
+            type: 'string',
+            description: 'Steps secondary color',
+            default: '#7b7d82'
+          },
+          {
+            property: 'textMainColor',
+            type: 'string',
+            description: 'Steps text main color'
+          },
+          {
+            property: 'textSecondaryColor',
+            type: 'string',
+            description: 'Steps text secondary color'
+          },
+          {
+            property: 'onChange',
+            type: `(currentStep?: string | number | undefined, buttonClick?: 'next' | 'previous') => void`,
+            description: 'Trigger when Step is changed, it returns the currentStep key and the button who triggered the action'
+          }
+        ]}
       />
     </>
   );
