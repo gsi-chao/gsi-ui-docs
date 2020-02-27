@@ -69,6 +69,9 @@ export const MainSidebar = () => {
             </Collapse>
           </li>
           <li>
+            <RiftLink to="/card">VCardPanel</RiftLink>
+          </li>
+          <li>
             <RiftLink to="/tabs-panel">Tabs Panel</RiftLink>
           </li>
           <li>
