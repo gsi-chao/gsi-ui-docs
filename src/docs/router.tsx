@@ -13,10 +13,10 @@ import VSuspenseDoc from './components/suspense/VSuspense';
 import VTabsPanelDoc from './components/tabs/VTabsPanel';
 import VOrgChartDoc from './components/org-chart/VOrgChart';
 import Home from './template/Home';
-import VTableDocs from "./components/table/VTableDocs";
-import {FormFieldContainer} from "gsi-ui/lib/types/Form/Inputs/FormFieldContainer";
-import FormLayout from "./components/forms/FormLayout";
+import VTableDocs from './components/table/VTableDocs';
+import FormLayout from './components/forms/FormLayout';
 import { VStepsDoc } from './components/steps/VSteps';
+import { VCardDoc } from './components/card/VCardDoc';
 
 export const routes: IRiftRoute[] = [
   {
@@ -31,13 +31,14 @@ export const routes: IRiftRoute[] = [
   { path: '/table/pagination', component: <VPaginationDocs /> },
   { path: '/example', component: () => <VInputsDoc /> },
   { path: '/forms', component: () => <FormLayout /> },
-  { path: '/forms/select', component: () => <>{'Select'}</>},
+  { path: '/forms/select', component: () => <>{'Select'}</> },
   { path: '/forms/color-picker', component: () => <VColorPickerDoc /> },
   {
     path: '/forms/select-unselect',
     component: () => <VSelectUnselectItemsDemo />
   },
   { path: '/forms/dnd', component: () => <VDragAndDropDoc /> },
+  { path: '/card', component: () => <VCardDoc /> },
   { path: '/tabs-panel', component: () => <VTabsPanelDoc /> },
   { path: '/toast', component: () => <VNotificationToastDocs /> },
   { path: '/load-progress', component: () => <VLoadProgressDoc /> },
